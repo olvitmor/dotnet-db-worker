@@ -1,4 +1,4 @@
-namespace dotnet_db_learning
+namespace dotnet_db_worker
 {
     public class Program
     {
@@ -7,7 +7,8 @@ namespace dotnet_db_learning
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-            builder.Services.AddControllersWithViews();
+            builder.Services.AddControllersWithViews()
+                .AddRazorRuntimeCompilation();
 
             var app = builder.Build();
 
@@ -28,7 +29,7 @@ namespace dotnet_db_learning
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Main}/{action=Index}/{id?}");
+                pattern: "{controller=Login}/{action=Index}/{id?}");
 
             app.Run();
         }

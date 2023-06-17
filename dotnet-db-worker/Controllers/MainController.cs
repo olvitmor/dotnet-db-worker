@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace dotnet_db_learning.Controllers
+namespace dotnet_db_worker.Controllers
 {
     public class MainController : Controller
     {
