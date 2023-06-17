@@ -1,0 +1,8 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/dotnet-db-learning/.vs
+/dotnet-db-learning/obj
+/dotnet-db-worker/.vs
+/dotnet-db-worker/obj
