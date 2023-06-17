@@ -19,7 +19,7 @@ namespace dotnet_db_learning
                 app.UseHsts();
             }
 
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
             app.UseStaticFiles();
 
             app.UseRouting();
@@ -28,7 +28,7 @@ namespace dotnet_db_learning
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}");
+                pattern: "{controller=Main}/{action=Index}/{id?}");
 
             app.Run();
         }
